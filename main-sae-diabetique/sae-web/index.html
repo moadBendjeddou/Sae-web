@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-diabetique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <!-- Logo seul en haut -->
+    <div class="logo">
+        <img src="images/logo2.png" alt="Logo Fédération" id="logo-img">
+    </div>
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <!-- Ligne menu + recherche + don -->
+    <div class="header-line">
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="#">La fédération&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9662;</a></li>
+                <li><a href="#">Nos actions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9662;</a></li>
+                <li><a href="#">S'informer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9662;</a></li>
+                <li><a href="#">Agir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9662;</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="search">
+                <div>
+                    <input type="text" placeholder="Recherche..." required>
+                </div>
+            </div>
+            <a href="#" class="don-button">Faire un don</a>
+        </div>
+    </div>
+</header>
+
+<!-- Carousel principal -->
+<section class="carousel">
+    <div class="list">
+        <article class="carousel-item active" style="--img-src: url('images/1.jpg');">
+            <div class="carousel-content">
+                <div class="image"></div>
+                <div class="carousel-info">
+                    <h2 class="title">
+                        Unis pour prévenir, accompagner <br>et vaincre le diabete
+                    </h2>
+                    <p class="category"><a href="apropos.html">A propos de nous &gt;&gt;</a></p>
+                    <div class="des"></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="carousel-item" style="--img-src: url('images/2.jpg');">
+            <div class="carousel-content">
+                <div class="image"></div>
+                <div class="carousel-info">
+                    <h2 class="title">Une petite vieille femme qui se fait aider</h2>
+                    <p class="category"><a href="apropos.html">A propos de nous &gt;&gt;</a></p>
+                    <div class="des"></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="carousel-item" style="--img-src: url('images/3.jpg');">
+            <div class="carousel-content">
+                <div class="image"></div>
+                <div class="carousel-info">
+                    <h2 class="title">Une deuxième petite femme</h2>
+                    <p class="category"><a href="apropos.html">A propos de nous &gt;&gt;</a></p>
+                    <div class="des"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+    </div>
+    <ul class="points">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+    </ul>
+</section>
+
+<section class="mini-carousel-container">
+    <div class="mini-carousel">
+        <button class="mini-prev">&#10094;</button>
+
+        <div class="mini-list">
+            <article class="mini-item">
+                <img src="images/2.jpg" alt="actu1">
+                <div class="mini-caption">
+                    <h4 class="mini-category">Recherche</h4>
+                    <h3 class="mini-title">Nouvelle étude sur le diabète</h3>
+                    <span class="mini-date">05 Octobre 2025</span>
+                    <p class="mini-text">Une étude récente montre des avancées prometteuses dans le traitement du diabète.</p>
+                </div>
+            </article>
+
+            <article class="mini-item">
+                <img src="images/2.jpg" alt="actu2">
+                <div class="mini-caption">
+                    <h4 class="mini-category">Santé</h4>
+                    <h3 class="mini-title">Atelier nutrition</h3>
+                    <span class="mini-date">01 Octobre 2025</span>
+                    <p class="mini-text">Un atelier interactif pour apprendre à mieux gérer son alimentation au quotidien.</p>
+                </div>
+            </article>
+
+            <article class="mini-item">
+                <img src="images/3.jpg" alt="actu3">
+                <div class="mini-caption">
+                    <h4 class="mini-category">Événement</h4>
+                    <h3 class="mini-title">Marche contre le diabète</h3>
+                    <span class="mini-date">20 Septembre 2025</span>
+                    <p class="mini-text">Participez à la marche annuelle pour sensibiliser au diabète dans votre ville.</p>
+                </div>
+            </article>
+
+            <article class="mini-item">
+                <img src="images/1.jpg" alt="actu4">
+                <div class="mini-caption">
+                    <h4 class="mini-category">Recherche</h4>
+                    <p class="mini-text">On a brûlé un diabétique, ça fait du caramel.</p>
+                </div>
+            </article>
+
+            <article class="mini-item">
+                <img src="images/2.jpg" alt="actu5">
+                <div class="mini-caption">
+                    <h4 class="mini-category">Recherche</h4>
+                    <p class="mini-text">On a brûlé un diabétique, ça fait du caramel.</p>
+                </div>
+            </article>
+
+            <article class="mini-item">
+                <img src="images/2.jpg" alt="actu6">
+                <div class="mini-caption">
+                    <h4 class="mini-category">Recherche</h4>
+                    <p class="mini-text">On a brûlé un diabétique, ça fait du caramel.</p>
+                </div>
+            </article>
+        </div>
+
+        <button class="mini-next">&#10095;</button>
+    </div>
+
+    <div class="all-news-button-container">
+        <a href="#" class="all-news-button">Toutes nos actualités</a>
+    </div>
+</section>
+
+
+
+<!-- --------------------------------------------Full-width image ----------------------------------->
+<section class="full-width-bg">
+    <img src="images/ok.jpg" alt="Background image" />
+
+    <div class="stats-overlay">
+        <h1 class="stats-title">Les chiffres qui nous rendent <em>fier·ère·s</em></h1>
+
+        <div class="stats-layout">
+            <div class="col left">
+                <div class="stat">
+                    <div class="count" data-target="2534">0</div>
+                    <div class="label">Personnes accompagnées</div>
+                </div>
+                <div class="stat">
+                    <div class="count" data-target="45">0</div>
+                    <div class="label">Associations partenaires</div>
+                </div>
+            </div>
+
+            <div class="center-stat">
+                <div class="stat">
+                    <div class="count" data-target="312">0</div>
+                    <div class="label">Bénévoles actifs</div>
+                </div>
+            </div>
+
+            <div class="col right">
+                <div class="stat">
+                    <div class="count" data-target="1287">0</div>
+                    <div class="label">Inscriptions aux recettes</div>
+                </div>
+                <div class="stat">
+                    <div class="count" data-target="892">0</div>
+                    <div class="label">Inscriptions à la newsletter</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ----------------------------------------------footer----------------------------------------------->
+<footer>
+    <div class="container">
+        <div class="footer-col">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Fédération">
+            </div>
+            <p class="footer-para">Parlez du diabete, faites avancer les choses</p>
+        </div>
+        <div class="footer-col">
+            <h3 class="federation">La fédération
+                <div class="underline"><span></span></div>
+            </h3>
+            <p>5 rue</p>
+            <p>Charles De Gaulle</p>
+            <p>France-Ville , France</p>
+            <p class="email">diabetiqueFR@gmail.com</p>
+            <p class="phone">+06 diabete</p>
+        </div>
+        <div class="footer-col">
+            <h3>Faire un don
+                <div class="underline"><span></span></div>
+            </h3>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Termes et conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter
+                <div class="underline"><span></span></div>
+            </h3>
+            <form action="">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Enter Company Email">
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+            </form>
+            <h4>Rejoignez 60,000+ membres et recevez nos actus par mail !</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button id="toTop"></button>
+<script src="app.js"></script>
+</body>
+</html>
