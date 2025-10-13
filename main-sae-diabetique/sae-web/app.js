@@ -134,6 +134,31 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.count').forEach(el => observer.observe(el));
 
+//gestion cookies ----------------------------------------------------------
+const btn = document.getElementById('cookie-btn');
+const panel = document.getElementById('cookie-panel');
+const accept = document.querySelector('.accept');
+const refuse = document.querySelector('.refuse');
+
+// Afficher / cacher le panneau
+btn.addEventListener('click', () => {
+    panel.classList.toggle('show');
+});
+
+// Si l’utilisateur accepte
+accept.addEventListener('click', () => {
+    alert("Cookies acceptés ✅");
+    panel.classList.remove('show');
+    // Ici tu pourrais enregistrer le choix dans localStorage
+});
+
+// Si l’utilisateur refuse
+refuse.addEventListener('click', () => {
+    alert("Cookies refusés ❌");
+    panel.classList.remove('show');
+    // Idem, tu pourrais stocker le refus ici
+});
+
 // --------------------------------------------------------------------------
 // Bouton "Retour en haut"
 
