@@ -177,6 +177,17 @@ section.carousel {
     position: relative;
     overflow: hidden;
 }
+section.carousel::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* hauteur du dégradé, à ajuster selon ton rendu */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, white 100%);
+    z-index: 2;
+    pointer-events: none;
+}
 section.carousel .list { width: 100%; height: 100%; position: relative; z-index: 1; }
 section.carousel article.carousel-item {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
@@ -309,6 +320,93 @@ section.mini-carousel-container {
     transition: 0.3s;
 }
 .all-news-button-container a:hover { background-color: var(--hover-red); color: #fff; }
+/*=====================================================
+  FULL-WIDTH IMAGE & ABOUT
+=====================================================*/
+.about-section {
+    position: relative;
+    background: url("images/qui.jpg") no-repeat center center/cover;
+    width: 100%;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.about-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 60px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.about-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.about-video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-video iframe {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-video iframe {
+        max-width: 100%;
+    }
+}
 
 /*=====================================================
   FULL-WIDTH IMAGE & STATS
@@ -490,16 +588,18 @@ p.email { margin: 20px 0; } p.phone { font-size: 20px; }
 =====================================================*/
 #toTop {
     position: fixed; bottom: 20px; right: 10px;
-    width: 50px; height: 50px;
+    width: 120px; height: 30px;
     background-size: 70%; background-repeat: no-repeat; background-position: center;
     background-color: var(--main-red);
     border: none; border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 10px 0 darkred;
+    box-shadow: 0 2px 0 black;
     transition: transform 0.3s, box-shadow 0.3s;
+
 }
+#toTop:hover { background-color: orange; }
 #toTop:active { transform: translateY(10px); box-shadow: none; }
-#toTop::after { content: '↑'; font-size: 14px; color: black; font-weight: bold; }
+#toTop::after { content: 'Haut de page ↑'; font-size: 14px; color: whitesmoke; font-weight: bold; }
 
 /*=====================================================
   ANIMATIONS
