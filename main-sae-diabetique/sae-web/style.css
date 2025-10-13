@@ -441,7 +441,7 @@ section.mini-carousel-container {
     align-items: center; /* centre verticalement */
     padding: 60px 20px;
     min-height: 100vh; /* pour que l'image prenne toute la hauteur de la page */
-    background: url('images/don1.jpg') no-repeat center center;
+    background: url('images/.jpg') no-repeat center center;
     background-size: cover; /* adapte l'image à la section */
     position: relative;
 }
@@ -583,6 +583,89 @@ p.email { margin: 20px 0; } p.phone { font-size: 20px; }
 .footer-col .social-icons i { padding: 10px; background-color: #fff; color: #00093c; border-radius: 50%; margin: 5px; }
 .footer-para { max-width: 200px; }
 
+/*=====================================================
+  BOUTON “cookies”
+=====================================================*/
+
+/* --- Bouton flottant --- */
+#cookie-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+#cookie-btn:hover {
+    background-color: #555;
+}
+
+/* --- Panneau des cookies --- */
+#cookie-panel {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 15px;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+#cookie-panel.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#cookie-panel h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#cookie-panel p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#cookie-panel button {
+    width: 48%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accept {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.refuse {
+    background-color: #e74c3c;
+    color: white;
+}
 /*=====================================================
   BOUTON “RETOUR EN HAUT”
 =====================================================*/
