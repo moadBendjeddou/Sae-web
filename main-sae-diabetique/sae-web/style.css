@@ -171,7 +171,7 @@ nav.menu-bar ul li:hover > .dropdown-menu { display: block; }
 =====================================================*/
 section.carousel {
     width: 100%;
-    height: 720px;
+    height: 100vh;
     color: #eee;
     margin-top: -50px;
     position: relative;
@@ -274,7 +274,7 @@ section.carousel .carousel-content {
   MINI-CAROUSEL
 =====================================================*/
 section.mini-carousel-container {
-    width: 100%; padding: 60px 0;
+    width: 100%; padding: 160px 0;
     display: flex; justify-content: center;
     box-sizing: border-box; background: #fff;
     position: relative;
@@ -282,19 +282,26 @@ section.mini-carousel-container {
 .mini-carousel { width: 90%; display: flex; align-items: center; overflow: hidden; position: relative; }
 .mini-list { display: flex; gap: 20px; transition: transform 0.5s ease; }
 .mini-item {
-    flex: 0 0 18%; min-width: 180px;
+    flex: 0 0 23%; 
+    min-width: 260px;
     background-color: #fff;
-    border-radius: 12px; overflow: hidden;
+    border-radius: 15px;
+    overflow: hidden;
     border: 4px solid #fff;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    display: flex; flex-direction: column; text-align: left;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease;
 }
-.mini-item img { width: 100%; height: 120px; object-fit: cover; border-radius: 10px; margin-bottom: 8px; }
+
+.mini-item img {width: 100%;height: 180px; /* plus grand */object-fit: cover;border-radius: 10px;margin-bottom: 10px;}
 .mini-caption { padding: 8px 12px; }
 .mini-category { font-size: 12px; font-weight: bold; color: var(--main-red); margin-bottom: 2px; text-transform: uppercase; }
 .mini-title { font-size: 14px; font-weight: bold; margin-bottom: 2px; }
 .mini-date { font-size: 11px; color: gray; margin-bottom: 5px; display: block; }
 .mini-text { font-size: 13px; color: #333; }
+.mini-item:hover {transform: scale(1.03);}
 
 /* Mini-buttons */
 .mini-prev, .mini-next {
